@@ -25,7 +25,7 @@ namespace ConsoleApp1
             int c = (int)b;
 
             string f = "1";
-
+            int cc = Convert.ToInt32(f);
             int j = int.Parse(f);
             Console.WriteLine(j);
 
