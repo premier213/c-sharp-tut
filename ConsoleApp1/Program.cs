@@ -6,7 +6,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            byte numner=2;
+            var numner=2;
             int count = 256;
             bool hasCount = false;
             float dec = 3.25f;
@@ -18,6 +18,18 @@ namespace ConsoleApp1
             Console.WriteLine(dec);
             Console.WriteLine(character);
             Console.WriteLine(firstName);
+            Console.WriteLine("{0},{1}", byte.MinValue, byte.MaxValue);
+
+            //conver 
+            float b = 0.0f;
+            int c = (int)b;
+
+            string f = "1";
+
+            int j = int.Parse(f);
+            Console.WriteLine(j);
+
+
         }
     }
 }
