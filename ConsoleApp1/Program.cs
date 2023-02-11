@@ -1,33 +1,20 @@
 ﻿using System;
+using ConsoleApp1.p;
 
 namespace ConsoleApp1
 {
-    internal class Program
+    internal partial class Program
     {
         static void Main(string[] args)
         {
-            var numner=2;
-            int count = 256;
-            bool hasCount = false;
-            float dec = 3.25f;
-            char character = 'a';
-            string firstName = "meysam";
-            Console.WriteLine(numner);
-            Console.WriteLine(count);
-            Console.WriteLine(hasCount);
-            Console.WriteLine(dec);
-            Console.WriteLine(character);
-            Console.WriteLine(firstName);
-            Console.WriteLine("{0},{1}", byte.MinValue, byte.MaxValue);
 
-            //conver 
-            float b = 0.0f;
-            int c = (int)b;
-
-            string f = "1";
-            int cc = Convert.ToInt32(f);
-            int j = int.Parse(f);
-            Console.WriteLine(j);
+            var personal = new Person();
+            personal.Firstname = "meysam";
+            personal.Lastname = "saberi";
+            personal.introduce();
+            var calc = new Calc();
+            var res = calc.Calculator(1, 2);
+            Console.WriteLine(res);
 
 
         }
