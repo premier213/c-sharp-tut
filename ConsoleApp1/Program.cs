@@ -15,6 +15,7 @@ namespace ConsoleApp1
             var calc = new Calc();
             var res = calc.Calculator(1, 2);
             Console.WriteLine(res);
+            Console.WriteLine("{0} {1}" , 10,12);
 
 
         }
